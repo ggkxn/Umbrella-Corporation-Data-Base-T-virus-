@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Corp Database - Symptoms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header-banner" id="banner"></div>
+    <div>
+        <button class="btn1" id="1btn" onclick="goNext('overview.html')">Overview</button>
+        <button class="btn2" id="2btn" onclick="goNext('structure.html')">Structure</button>
+        <button class="btn3" id="3btn" onclick="goNext('symptoms.html')">Symptoms</button>
+        <button class="btn4" id="4btn" onclick="goNext('containment.html')">Containment Logs</button>
+        <button class="btn5" id="5btn" onclick="goNext('mutation.html')">Mutation Data</button>
+    </div>
+
+
+    <main class="content-area">
+        <div class="symptoms-page-container">
+            <h2 class="section-title">T-VIRUS / CLINICAL SYMPTOMATOLOGY & HOST BEHAVIOR</h2>
+            <p class="section-description">
+                CONFIDENTIAL: Detailed classification of biological and neurological degradation following T-Virus
+                infection. Progression is categorized into three distinct phases.
+            </p>
+
+            <div class="symptom-report-grid">
+
+                <div class="symptom-report-container">
+                    <h3 class="phase">PHASE I: INITIAL VIREMIA (4 - 24 HOURS POST-EXPOSURE)</h3>
+                    <ul class="symptom-list">
+                        <li><span class="symptom-key">[Fever]</span> Profound increase in core body temperature
+                            (hyperpyrexia).</li>
+                        <li><span class="symptom-key">[Photophobia]</span> Extreme sensitivity to light; dilated,
+                            bloodshot pupils.</li>
+                        <li><span class="symptom-key">[Cognition]</span> Disorientation, severe headache, and episodic
+                            short-term memory loss.</li>
+                        <li><span class="symptom-key">[Behavior]</span> Increased aggression and profound paranoia in
+                            isolated cases.</li>
+                    </ul>
+                </div>
+
+                <div class="symptom-report-container">
+                    <h3 class="phase">PHASE II: TISSUE NECROSIS (1 - 3 DAYS POST-EXPOSURE)</h3>
+                    <ul class="symptom-list">
+                        <li><span class="symptom-key">[Motor]</span> Significant decrease in fine motor control
+                            (ataxia). Involuntary muscle spasms.</li>
+                        <li><span class="symptom-key">[Metabolism]</span> Extreme decrease in metabolic rate, leading to
+                            deep coma-like states.</li>
+                        <li><span class="symptom-key">[Oral]</span> Advanced necrosis and discoloration of oral mucosa
+                            and soft palate.</li>
+                        <li><span class="symptom-key">[Sense]</span> Complete loss of pain perception (analgesia).
+                            Heightened olfactory response.</li>
+                    </ul>
+                </div>
+
+                <div class="symptom-report-container">
+                    <h3 class="phase">PHASE III: REANIMATION & HOSTILE STATE (3+ DAYS)</h3>
+                    <ul class="symptom-list">
+                        <li><span class="symptom-key">[Cerebral]</span> Complete cessation of higher brain function;
+                            brainstem activity only.</li>
+                        <li><span class="symptom-key">[Integumentary]</span> Extreme pallor; skin is cold, brittle, and
+                            partially sloughed off.</li>
+                        <li><span class="symptom-key">[Behavior]</span> Immediate, relentless pursuit of living tissue.
+                            Incapacity for reason or recognition.</li>
+                        <li><span class="symptom-key">[Viral Load]</span> Virus load peaks, making the host a primary
+                            vector for aerosol and contact transmission.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Corp Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <button class="btn1" id="1btn" onclick="goNext('overview.html')">Overview</button>
+        <button class="btn2" id="2btn" onclick="goNext('structure.html')">Structure</button>
+        <button class="btn3" id="3btn" onclick="goNext('symptoms.html')">Symptoms</button>
+        <button class="btn4" id="4btn" onclick="goNext('containment.html')">Containment Logs</button>
+        <button class="btn5" id="5btn" onclick="goNext('mutation.html')">Mutation Data</button>
+    </div>
+    <h2 class="conf">ATTENTION. CONFIDENTIAL. You are attempting to access sections of the information network under the
+        direct control of Umbrella Corporation. This resource contains materials and developments related to objects of
+        heightened biological and corporate secrecy. Any attempt to access, scan, copy, modify, or distribute
+        information without authorization will be considered deliberate interference with the corporation's protected
+        systems.
+    </h2>
+
+    <svg class="umb-svg" width="300px" height="300px" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" stroke-width="2">
+        <radialGradient id="red" cx="150" cy="150" r="150" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#c00" offset=".3" />
+            <stop stop-color="#a11" offset=".7" />
+        </radialGradient>
+        <radialGradient id="white" cx="150" cy="150" r="150" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#ddd" offset=".3" />
+            <stop stop-color="#fff" offset=".6" />
+            <stop stop-color="#ddd" offset=".9" />
+        </radialGradient>
+        <g id="a">
+            <g id="b">
+                <path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#red)" stroke="#870200" />
+                <path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#white)" stroke="#bdbdbd" />
+            </g>
+            <use transform="rotate(90,150,150)" xlink:href="#b" />
+        </g>
+        <use transform="rotate(180,150,150)" xlink:href="#a" />
+    </svg>
+
+
+    <div class="matrix-bg" id="matrix"></div>
+    <div class="header-banner" id="banner"></div>
+    <div><img class="inop" src=".\2.png" alt="T-virus" oncontextmenu="return false;" draggable="false"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
